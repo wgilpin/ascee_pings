@@ -44,10 +44,14 @@
 
             <article>
                 <header>
-                    <h1>Ping Form for Corp Fleets</h1>
+                    <h1>Ping Tool for Corp Fleets</h1>
                     <p>Fill in the form here, then click Generate</p>
                 </header>
-                <section>
+                <section id="sectionNojs">
+                    <h3>This tool required javascript</h3>
+                    It seems to be turned off in your browser
+                </section>
+                <section id="sectionForm" style="display: none">
                     <h2>Ping Details</h2>
                     <form>
                         <div>
@@ -144,15 +148,13 @@
                             <label for="inHurf">Hurf</label>
                             <textarea id="inHurf"></textarea>
                         </div>
+                        <div>
+                            <button id="btnGenerate">Generate</button>
+                        </div>
 
                     </form>
                 </section>
-                <section>
-                    <div>
-                        <button id="btnGenerate">Generate</button>
-                    </div>
-                </section>
-                <section id="sectionOut">
+                <section id="sectionOut" style="display: none">
                     <h2>Ping this</h2>
                     <textarea rows="8" id="outText"></textarea>
                     <div>

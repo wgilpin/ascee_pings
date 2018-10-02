@@ -1,6 +1,9 @@
 $(function() {
   // Handler for .ready() called.
   $('#sectionOut').hide();
+  $('#sectionNojs').hide();
+  $('#sectionForm').show();
+
   function optText(label, id) {
     var text = $(id).val();
     if (text) {

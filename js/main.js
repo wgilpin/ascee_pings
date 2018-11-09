@@ -18,7 +18,8 @@ $(function() {
     document.execCommand('copy');
   });
 
-  $('#btnGenerate').on('click', function() {
+  $('#btnGenerate').on('click', function(event) {
+    event.preventDefault();
     var ping =
       '@reqbcast :siren: ' +
       $('#inHurf').val() +
